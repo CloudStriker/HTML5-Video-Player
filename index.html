@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   	<meta name="author" content="ClickNow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi There</title>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+  	<link
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+      href="https://cdn.plyr.io/static/fonts/gordita-medium.woff2"
+    />
+    <link
+      rel="preload"
+      as="font"
+      crossorigin
+      type="font/woff2"
+      href="https://cdn.plyr.io/static/fonts/gordita-bold.woff2"
+    />
+</head>
+<body>
+    <div id="container">
+        <video controls data-poster="sourcePoster" class="vid1" style="height: fit-content">
+          <source
+              src="sourceMP4"
+              type="video/mp4"
+              size="480"
+            />
+            <source
+              src="sourceMP4"
+              type="video/mp4"
+              size="720"
+            />
+            <source
+              src="sourceMP4"
+              type="video/mp4"
+              size="1080"
+            />
+        </video>
+      </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.7/plyr.min.js"></script>
+
+<script>
+  var controls =
+[
+    'play-large', // The large play button in the center
+    'play', // Play/pause playback
+    'rewind', // Rewind by the seek time (default 10 seconds)
+    'progress', // The progress bar and scrubber for playback and buffering
+    'current-time', // The current time of playback
+    'mute', // Toggle mute
+    'volume', // Volume control
+  	'pip', // Picture-in-Picture
+    'settings', // Settings menu
+    'fullscreen' // Toggle fullscreen
+];
+
+  const player = new Plyr('.vid1',{controls});
+</script>
+
+<style>
+  :root {
+  --plyr-color-main: lightblue;
+    --plyr-video-control-color  :white;
+}
+
+</style>
+</html>
