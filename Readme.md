@@ -1,10 +1,11 @@
-# HTML 5 Plyr
+# HTML 5 Plyr & Dplayer
 
-This Code use to play video with plyr.
+This Code use to play video with plyr or Dplayer.
 
 ## How To Use
 
-1. Copy poster link to Line 3
-2. Copy source video link to line 4/5/6 (if you dont need the other size, just delete them)
+1. Change The Link in the code
 
-Source [Plyr.io](https://github.com/sampotts/plyr)
+Source:
+[Plyr](https://github.com/sampotts/plyr)
+[Dplayer](https://github.com/DIYgod/DPlayer)
