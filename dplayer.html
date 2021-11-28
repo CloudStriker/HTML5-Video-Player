@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        #dplayer {
+            max-width: fit-content;
+            height: fit-content;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="dplayer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/dplayer@1.26.0/dist/DPlayer.min.js"></script>
+    <script>
+        var dp = new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: true,
+            volume: 1,
+            airplay: true,
+            hotkey: true,
+            preload: 'auto',
+            video: {
+                quality: [{
+                        name: '720p',
+                        url: 'MP4 Link',
+                        type: 'auto',
+                    },
+                    {
+                        name: '480p',
+                        url: 'MP4 Link',
+                        type: 'auto',
+                    },
+                ],
+                defaultQuality: 0,
+                pic: 'Poster Link',
+            },
+        });
+    </script>
+</body>
+</html>
