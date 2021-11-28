@@ -9,7 +9,7 @@
     <style>
         :root {
             --plyr-color-main: rgb(101, 101, 255);
-            --plyr-video-control-color: white;
+            --plyr-video-control-color: #ffffff;
             max-width: fit-content;
             height: fit-content;
             margin: 0 auto;
@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="container">
-        <video controls data-poster="PosterLink JPG" class="video">
+        <video controls data-poster="Poster Link" class="player">
             <source src="MP4 Link" type="video/mp4" size="480" />
             <source src="MP4 Link" type="video/mp4" size="720" />
             <source src="MP4 Link" type="video/mp4" size="1080" />
@@ -41,7 +41,7 @@
             'airplay', // Airplay (currently Safari only)
             'fullscreen', // Toggle fullscreen
         ];
-        const player = new Plyr('.video', {
+        const player = new Plyr('.player', {
             controls
         });
     </script>
