@@ -10,15 +10,15 @@
         :root {
             --plyr-color-main: rgb(101, 101, 255);
             --plyr-video-control-color: #ffffff;
-            max-width: fit-content;
-            height: fit-content;
+            width: 1280px;
+            height: 720px;
             margin: 0 auto;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <video controls data-poster="Poster Link" class="player">
+        <video controls data-poster="Poster Link" class="video">
             <source src="MP4 Link" type="video/mp4" size="480" />
             <source src="MP4 Link" type="video/mp4" size="720" />
             <source src="MP4 Link" type="video/mp4" size="1080" />
@@ -28,20 +28,22 @@
     <script>
         var controls = [
             'play-large', // The large play button in the center
+            // 'restart', // Restart playback
             'play', // Play/pause playback
             'rewind', // Rewind by the seek time (default 10 seconds)
+            'fast-forward', // Fast forward by the seek time (default 10 seconds)
             'progress', // The progress bar and scrubber for playback and buffering
             'current-time', // The current time of playback
             'duration', // The full duration of the media
             'mute', // Toggle mute
             'volume', // Volume control
-            'captions', // Toggle captions
+            // 'captions', // Toggle captions
             'settings', // Settings menu
             'pip', // Picture-in-picture (currently Safari only)
             'airplay', // Airplay (currently Safari only)
-            'fullscreen', // Toggle fullscreen
+            'fullscreen' // Toggle fullscreen
         ];
-        const player = new Plyr('.player', {
+        const player = new Plyr('.video', {
             controls
         });
     </script>
